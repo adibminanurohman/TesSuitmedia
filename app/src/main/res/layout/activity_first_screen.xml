@@ -22,7 +22,7 @@
             android:src="@drawable/ic_photo" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/edt_name"
             android:layout_width="310dp"
             android:layout_height="47dp"
             android:layout_marginBottom="15dp"
@@ -36,13 +36,13 @@
             android:textColorHint="@color/black_transparan" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/edt_palindrome"
             android:layout_width="310dp"
             android:layout_height="47dp"
             android:layout_marginBottom="45dp"
             android:background="@drawable/inputtextfirst"
             android:ems="10"
-            android:hint="Polindrome"
+            android:hint="Palindrome"
             android:inputType="text"
             android:paddingHorizontal="20dp"
             android:textColor="@color/black"
@@ -50,21 +50,21 @@
             android:textColorHint="@color/black_transparan" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_check"
             android:layout_width="310dp"
             android:layout_height="41dp"
             android:layout_marginBottom="15dp"
             android:fontFamily="@font/poppins_light"
-            android:backgroundTint="@color/hijau_main"
-            android:text="CHECK" />
+            android:text="CHECK"
+            android:background="@drawable/rounded_button"/>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_next"
             android:layout_width="310dp"
             android:layout_height="41dp"
-            android:backgroundTint="@color/hijau_main"
             android:fontFamily="@font/poppins_light"
-            android:text="NEXT" />
+            android:text="NEXT"
+            android:background="@drawable/rounded_button"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<!-- rounded_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="12dp" /> <!-- Atur radius sesuai preferensi Anda -->
+    <solid android:color="@color/hijau_main" /> <!-- Ganti dengan warna yang Anda inginkan -->
+</shape>

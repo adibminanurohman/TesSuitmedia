@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="black_transparan">#6867775C</color>
     <color name="hijau_main">#2B637B</color>
+    <color name="colorPrimary">#2B637B</color>
+    <color name="colorPrimaryDark">#2B637B</color>
+    <color name="colorAccent">#2B637B</color>
 </resources>
