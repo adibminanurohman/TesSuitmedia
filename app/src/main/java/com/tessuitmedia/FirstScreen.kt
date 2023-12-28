@@ -41,7 +41,9 @@ class FirstScreen : AppCompatActivity() {
         }
 
         nextButton.setOnClickListener {
+            val name = inputName.text.toString()
             val intent = Intent(this, SecondScreen::class.java)
+            intent.putExtra("USER_NAME", name)
             startActivity(intent)
         }
     }
