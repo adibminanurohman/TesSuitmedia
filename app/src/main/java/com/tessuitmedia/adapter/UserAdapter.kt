@@ -35,12 +35,14 @@ class UserAdapter(
             .load(currentItem.avatar)
             .into(holder.avatar)
         holder.first_name.text = currentItem.firstName
+        holder.last_name.text = currentItem.lastName
         holder.email.text = currentItem.email
     }
 
 
     class MyViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         var first_name:TextView = itemView.findViewById(R.id.tv_firstName)
+        var last_name:TextView = itemView.findViewById(R.id.tv_lastName)
         var email:TextView = itemView.findViewById(R.id.tv_email)
         var avatar:ImageView = itemView.findViewById(R.id.img_user)
     }
