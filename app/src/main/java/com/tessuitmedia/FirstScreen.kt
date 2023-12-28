@@ -1,5 +1,6 @@
 package com.tessuitmedia
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -14,6 +15,7 @@ class FirstScreen : AppCompatActivity() {
         val inputName = findViewById<EditText>(R.id.edt_name)
         val inputSentence = findViewById<EditText>(R.id.edt_palindrome)
         val checkButton = findViewById<Button>(R.id.btn_check)
+        val nextButton = findViewById<Button>(R.id.btn_next)
 
         checkButton.setOnClickListener {
             val palindrome = inputSentence.text.toString().replace("\\s".toRegex(), "")
@@ -36,6 +38,11 @@ class FirstScreen : AppCompatActivity() {
 
             val alertDialog = alertDialogBuilder.create()
             alertDialog.show()
+        }
+
+        nextButton.setOnClickListener {
+            val intent = Intent(this, SecondScreen::class.java)
+            startActivity(intent)
         }
     }
 }
